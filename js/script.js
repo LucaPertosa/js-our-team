@@ -58,7 +58,7 @@ function generateCard(name, job, imgString, i) {
     <div class="card text-center">
         <img src="img/${imgString}" class="card-img-top" alt="Member-img">
         <div class="card-body">
-            <p class="card-text">${name}</p>
+            <h5 class="card-title">${name}</h5>
             <p class="card-text">${job}</p>
         </div>
     </div>
