@@ -50,20 +50,18 @@ for (let i = 0; i < team.length; i++) {
 
 // FUNCTIONS
 // Creo funzione per creare dinamicamente le col dei singoli membri:
-function generateCard(name, job, text) {
+function generateCard(name, job, imgString, i) {
     const newCard = document.createElement("div");
     newCard.classList.add("col-12");
     newCard.innerHTML = 
     `
-    <div class="card">
+    <div class="card text-center">
+        <img src="img/${imgString}" class="card-img-top" alt="Member-img">
         <div class="card-body">
             <p class="card-text">${name}</p>
             <p class="card-text">${job}</p>
-            <p class="card-text">${text}</p>
         </div>
     </div>
     `;
     return newCard;
 };
-
-console.log(generateCard().innerHTML);
